@@ -1,0 +1,19 @@
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-3">
+      <div class="sidebar">
+        <ul class="menu">
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Client Look History</a></li>
+          <li><a href="#">Emergency PIN Configuration</a></li>
+          <li><a href="#">Emergency PIN History</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-9">
+      <a routerLink="generate-client" routerLinkActivate="activate" class="blue-button mb-5">+ New</a>
+      
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
