@@ -1,0 +1,39 @@
+.blue-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .blue-button:hover {
+    background-color: darkblue;
+  }
+
+  .sidebar {
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 10px;
+  }
+  
+  .menu li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    background-color: #ddd;
+  }
+  

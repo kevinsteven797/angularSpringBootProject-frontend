@@ -1,0 +1,31 @@
+
+<button class="blue-button ml-2" (click)="exportCSV()">Exportar CSV</button>
+
+<div class="search-container">
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Enter shared Key">
+    <button class="mb-3" (click)="searchClients()">Buscar</button>
+</div>  
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Shared Key</th>
+            <th>Business ID</th>
+            <th>E-mail</th>
+            <th>Phone</th>
+            <th>Data Added</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let client of clients">
+            <td>{{client.nickName}}</td>
+            <td>{{client.name}}</td>
+            <td>{{client.email}}</td>
+            <td>{{client.phone}}</td>
+            <td>{{ client.startDate | date: 'dd/MM/yyyy' }}</td>
+            <td>
+                <button (click)="updateClient(client.id)" class="btn btn-info">Editar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
